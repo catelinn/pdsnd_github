@@ -1,21 +1,21 @@
-### Date created
+## Date created
 June 11, 2020
 
 
 
-### Project Title
-US Bikeshare Data Analaysis CLI Program Project
+## Project Title
+US Bikeshare Data CLI Program Project
 
 
 
-### Description
+## Description
 
-`bikeshare` is a cli program that explores the bikeshare data of Chicago, New York and Washginton cities, which is provided in the embedded data files.
+`bikeshare` is a cli program that explores the bikeshare data of Chicago, New York and Washginton cities.
 
-This program is implemented using Ptyon Click 7.0 and above. 
+This program is implemented using [Python Click 7.0](https://click.palletsprojects.com/en/7.x/) and above. 
 
 
-### Files used
+## Files used
 
 ```shell
 ├── MANIFEST.in
@@ -27,20 +27,20 @@ This program is implemented using Ptyon Click 7.0 and above.
 ├── setup.py
 ```
 
-### Installation
+## Installation
 
 Run this in Linux or MacOS terminal to clone the repo and install the package as CLI command.
 
 `git clone https://github.com/catelinn/pdsnd_github.git bikeshare_cli && cd bikeshare_cli && pip install .`
 
 
-### Usage
+## Usage
 
 - `bikeshare -h`
 - `bikeshare filter -h`
 
 
-#### Example:
+#### Command Examples:
 
 - View data of Chicago in January, February and March on Wednesday and Friday: 
 
@@ -55,7 +55,7 @@ Run this in Linux or MacOS terminal to clone the repo and install the package as
     `bikeshare filter`
 
 
-### Credits
+## Credits
 [Comparing Python Command-Line Parsing Libraries – Argparse, Docopt, and Click
 by Kyle Purdon](https://realpython.com/comparing-python-command-line-parsing-libraries-argparse-docopt-click/)
 
