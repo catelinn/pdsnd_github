@@ -33,8 +33,13 @@ Run this in Linux or MacOS terminal to clone the repo and install the package as
 
 `git clone https://github.com/catelinn/pdsnd_github.git bikeshare_cli && cd bikeshare_cli && pip install .`
 
+To uninstall:
+
+`pip uninstall bikeshare` 
 
 ## Usage
+
+Make sure to save `chicago.csv`, `new_york_city.csv` and `washington.csv` under the cloned project `bikeshare_cli` root direcotry in your computer. 
 
 - `bikeshare -h`
 - `bikeshare filter -h`
