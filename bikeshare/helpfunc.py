@@ -8,7 +8,6 @@ import click
 import numpy as np
 import pandas as pd
 
-
 CITY_DATA = { 'Chicago': 'data/chicago.csv',
               'New York': 'data/new_york_city.csv',
               'Washington': 'data/washington.csv' }
