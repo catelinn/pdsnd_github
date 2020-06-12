@@ -17,5 +17,5 @@ setup(name='bikeshare',
       entry_points={
           'console_scripts': ['bikeshare=bikeshare.cli:main'], #command=package.module:function
       },
-      include_package_data=True, # include non-code files in MANIFEST.in
+      include_package_data=True, # include non-code files in MANIFEST.in if any
       zip_safe=False)
