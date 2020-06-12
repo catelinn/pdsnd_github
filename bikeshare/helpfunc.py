@@ -69,16 +69,25 @@ def validate_val(ctx, value, valid, errmsg):
         raise click.BadParameter(errmsg)
 
 def validate_city(ctx, value):
+    """
+    Validate value for one city
+    """
     valid = ['chicago', 'new york', 'washington']
     return validate_val(ctx, value, valid, TEXT['help']['city'])
 
 
 def validate_months(ctx, value):
+    """
+    Validate value for one or more months
+    """
     a_val = '0'
     valid = ['1','2','3','4','5','6']
     return validate_vallist(ctx, value, a_val, valid, TEXT['help']['month'])
 
 def validate_days(ctx, value):
+    """
+    Validate value for one or more days
+    """
     a_val = '0'
     valid = ['1','2','3','4','5','6','7']
     return validate_vallist(ctx, value, a_val, valid, TEXT['help']['day_of_week'])
@@ -108,6 +117,9 @@ def show_data(df, line_num):
 
 
 def check_col(df, col_name):
+    """
+    Check if a column in a dataframe
+    """
     if col_name in df.columns:
         return True
     else:
