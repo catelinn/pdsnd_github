@@ -1,12 +1,11 @@
+import sys
 import click
 import numpy as np
 import pandas as pd
 
-from .helpfunc import validate_city, validate_days, validate_months, show_data, station_stats,\
-    trip_duration_stats, time_stats, user_stats, stream_to_df, CITY_DATA, TEXT
-
-import sys
-
+from .helpfunc import (CITY_DATA, TEXT, show_data, station_stats, stream_to_df,
+                       time_stats, trip_duration_stats, user_stats,
+                       validate_city, validate_days, validate_months)
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
@@ -88,8 +87,3 @@ def filter(ctx, city, month, day_of_week, show, line):
     if click.confirm('Restart to explore new dataset?'):
         sys.argv.clear()
         ctx.invoke(filter)
-
-
-        
-        
-        
